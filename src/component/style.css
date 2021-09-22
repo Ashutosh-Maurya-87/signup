@@ -4,8 +4,8 @@
   background-color: rgb(243, 243, 243);
 }
 .btn {
-  width: 20%;
-  margin-left: 50%;
+  width: 40%;
+  margin: 10% 0% 0% 50%;
 }
 .sign-text {
   margin-top: 30px;
@@ -13,4 +13,13 @@
 }
 .text {
   margin-top: 30px;
+}
+#first {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.image {
+  float: right;
+  text-align: right;
 }

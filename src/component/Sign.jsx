@@ -6,6 +6,7 @@ import banner from "./imeges/login-bannerimg.png";
 const Sign = () => {
   const [userName, setUserName] = useState("");
   const [userPass, setUserPass] = useState(" ");
+
   const btnFunc = () => {
     alert("data are save");
     console.log("this button work ");
@@ -21,8 +22,8 @@ const Sign = () => {
   return (
     <>
       <div className="container">
-        <div className="row">
-          <div className="col-sm-10">
+        <div className="column">
+          <div className="row-md-4">
             Don't have an account?<Link>Sign Up</Link>
             <p className="sign-text">
               Sign in to <b>Nsestb</b>
@@ -57,8 +58,6 @@ const Sign = () => {
               <input type="checkbox" />
               <label>keep me logged in next time</label>
               <br />
-
-              <p className="text">Forget Password?</p>
               <button
                 type="submit"
                 className="btn btn-primary "
@@ -66,11 +65,17 @@ const Sign = () => {
               >
                 Login
               </button>
+              <div id="first">
+                <p className="text">Forget Password?</p>
+                <p className="text">
+                  Already have an account?<Link>Login here</Link>
+                </p>
+              </div>
             </form>
           </div>
         </div>
       </div>
-      <div className="col-sm-4 text-right">
+      <div className="row-sm-4 image">
         <img src={banner} alt="" />
       </div>
     </>
