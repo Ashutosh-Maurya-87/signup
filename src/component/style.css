@@ -1,11 +1,9 @@
-.container {
-  margin: 5% 50% 5% 5%;
-  width: 40%;
-  background-color: rgb(243, 243, 243);
-}
+/* .container {
+  width: 34%;
+} */
 .btn {
   width: 40%;
-  margin: 10% 0% 0% 50%;
+  margin: 5% 0% 0% 20%;
 }
 .sign-text {
   margin-top: 30px;
@@ -19,8 +17,10 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.image {
+
+/* #first-column {
   margin: 0%;
-  float: right;
-  text-align: right;
-}
+  padding: 0%;
+      width: 100%;
+    overflow: hidden;
+} */
