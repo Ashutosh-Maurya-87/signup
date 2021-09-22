@@ -20,6 +20,7 @@
   justify-content: space-between;
 }
 .image {
+  margin: 0%;
   float: right;
   text-align: right;
 }
