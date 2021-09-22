@@ -29,7 +29,6 @@ function App() {
               type="password"
               placeholder="enter your password"
             />
-            <p>lorem epsum sdfgds dsgsdg rety ersty ewrwert asrsafsd bg</p>
           </div>
           {/* <div className="col-lg-5">
             <h2>colunm2</h2>
