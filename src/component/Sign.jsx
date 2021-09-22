@@ -21,17 +21,16 @@ const Sign = () => {
 
   return (
     <>
-      <div className="container">
-        <div className="column">
-          <div className="row-md-4">
-            Don't have an account?<Link>Sign Up</Link>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-sm-7" id="first-column">
+            Don't have an account?
+            <Link>Sign Up first</Link>
             <p className="sign-text">
               Sign in to <b>Nsestb</b>
             </p>
             <form onSubmit={onSubmit}>
-              <label style={{ color: "gray", fontWeight: "bold" }}>
-                ENTER YOUR USERNAME
-              </label>
+              <label style={{ fontWeight: "bold" }}>ENTER YOUR USERNAME</label>
               <input
                 style={{ width: "100%", height: "50px" }}
                 type="text"
@@ -41,11 +40,11 @@ const Sign = () => {
                   setUserName(e.target.value);
                 }}
               />
-              <label
-                style={{ color: "gray", fontWeight: "bold", marginTop: "5%" }}
-              >
+
+              <label style={{ fontWeight: "bold", marginTop: "5%" }}>
                 ENTER YOUR PASSWORD
               </label>
+
               <input
                 style={{ width: "100%", height: "50px" }}
                 type="password"
@@ -55,6 +54,7 @@ const Sign = () => {
                 }}
                 placeholder="enter your password"
               />
+
               <input type="checkbox" />
               <label>keep me logged in next time</label>
               <br />
@@ -73,10 +73,10 @@ const Sign = () => {
               </div>
             </form>
           </div>
+          <div className="col-sm-5">
+            <img src={banner} alt="" />
+          </div>
         </div>
-      </div>
-      <div className="row-sm-4 image">
-        <img src={banner} alt="" />
       </div>
     </>
   );
