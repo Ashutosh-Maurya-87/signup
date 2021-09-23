@@ -9,9 +9,14 @@ const Sign = () => {
   const [errorUser, setErrorUser] = useState(false);
   const [errorPass, setErrorPass] = useState(false);
 
+  // const btnFunc = () => {
+  //   setUserName("");
+  //   setUserPass("");
+  // };
+
   const onSubmit = (e) => {
     e.preventDefault();
-    console.log(userName, userPass);
+    //console.log(userName, userPass);
     if (!userName) setErrorUser(true);
     if (!userPass) setErrorPass(true);
   };
@@ -77,7 +82,7 @@ const Sign = () => {
                 <button
                   type="submit"
                   className="btn btn-primary "
-                  // onClick={btnFunc}
+                  //onClick={btnFunc}
                 >
                   Login
                 </button>
